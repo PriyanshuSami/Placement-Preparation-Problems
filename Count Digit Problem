@@ -1,0 +1,21 @@
+Question:- You are given a number ’n’.Find the number of digits of ‘n’ that evenly divide ‘n’.
+
+Solution:-
+              #include<iostream>
+              using namespace std;
+              int countDigits(int n){
+              	   int org = n;
+                  int cnt=0;
+                  while(n>0){
+                       int m = n%10;
+                       if(m!=0 && org%m==0){
+                              cnt++;
+                       }n=n/10;
+                  }return cnt;
+              }
+              int main(){
+              int n;
+              cin>>n;
+              cout<<countDigits(n);
+              return 0;
+              }
