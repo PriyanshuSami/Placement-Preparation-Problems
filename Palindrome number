@@ -1,0 +1,28 @@
+Question:-Check whether a given number ’n’ is a palindrome number.
+
+Solution:-
+#include<iostream>
+using namespace std;
+bool palindrome(int n)
+{
+    // Write your code here
+    int temp = n;
+    int m = 0;
+    while(n>0){
+        int reverse = n%10;
+        m = m*10+reverse;
+        n=n/10;
+    }
+  return m == temp;
+
+}
+int main(){
+    int n;
+    cin>>n;
+  if(palindrome(n)){
+      cout<<"Yes";
+  }else{
+      cout<<"No";
+  }
+  return 0;
+}
