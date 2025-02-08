@@ -1,0 +1,19 @@
+Q.:-
+A prime number is a positive integer that is divisible by exactly 2 integers, 1 and the number itself.
+You are given a number 'n'.
+Find out whether 'n' is prime or not.
+
+Solution:-
+#include<iostream>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+if(n==1){
+cout<<"Not A Prime Number;}
+	for(int i=2;i*i<=n;i++){
+		if(n%i==0){
+cout<<"Not A Prime Number;}
+	}
+cout<<"Prime Number;
+return 0;}
