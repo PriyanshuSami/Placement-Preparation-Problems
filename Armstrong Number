@@ -1,0 +1,25 @@
+Q.:- Check the given number is armstrong number or not?
+
+Solution:-
+
+#include<iostream>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+	int temp = n;
+	int cnt = (int)(log10(n)+1);
+	int sum = 0;
+	while(temp>0){
+		int num = temp%10;
+		double m = pow(num,cnt);
+		sum = sum + m;
+		temp = temp/10;
+	}
+	if(sum == n){
+	    cout<<"Yes";
+	}else{
+	    cout<<"No";
+	}
+return 0;
+}
