@@ -1,0 +1,24 @@
+Q :-Print GFG for N times Using Recursion?
+
+Solution:-
+
+#include<iostream>
+using namespace std;
+int cnt = 1;
+    void printGfg(int N) {
+        // Code here
+        if(cnt>N){
+            return;
+        }
+        cout<<"GFG ";
+        cnt++;
+        printGfg(N);
+    }
+    
+    int main(){
+        int N;
+        cin>>N;
+        printGfg(N);
+        return 0;
+        
+    }
