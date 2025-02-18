@@ -1,0 +1,22 @@
+Q:- Write a c++ code to Reverse a number with limited digits ?
+
+Solution:-
+
+#include <climits>
+
+class Solution {
+public:
+    int reverse(int x) {
+        long long rev = 0; 
+        while (x != 0) {
+            int m = x % 10; 
+            rev = rev * 10 + m; 
+            x /= 10; 
+        }
+        if (rev > INT_MAX || rev < INT_MIN) {
+            return 0; 
+        }
+        
+        return static_cast<int>(rev); 
+    }
+};
