@@ -1,3 +1,8 @@
 Q. Write a c++ atoi function which convert string into integer ?
 
 Solution:-
+
+#include<iostream>
+using namespace std;
+ int main(){
+int n;
